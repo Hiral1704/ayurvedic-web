@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Orders | Organic Ayurveda</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌿 Organic Ayurveda
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="products.html">Products</a></li>
+
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="icons">
+
+            <i class="fas fa-search"></i>
+
+            <i class="fas fa-shopping-cart">
+
+                <span id="cart-count">0</span>
+
+            </i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>📦 My Orders</h1>
+
+        <p>Track all your placed orders</p>
+
+    </section>
+
+    <!-- ================= ORDERS TABLE ================= -->
+
+    <section class="cart-section">
+
+        <table class="cart-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Order ID</th>
+
+                    <th>Date</th>
+
+                    <th>Customer</th>
+
+                    <th>Payment</th>
+
+                    <th>Total</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="orders-body">
+
+                <!-- JavaScript will load orders here -->
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ================= EMPTY ORDER ================= -->
+
+    <div id="empty-orders" class="empty-cart" style="display:none;">
+
+        <i class="fas fa-box-open"></i>
+
+        <h2>No Orders Found</h2>
+
+        <p>You haven't placed any orders yet.</p>
+
+        <a href="products.html">
+            Shop Now
+        </a>
+
+    </div>
+    <!-- ================= ORDER SUMMARY ================= -->
+
+    <section class="cart-summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+            <span>Total Orders</span>
+            <span id="total-orders">0</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Completed</span>
+            <span id="completed-orders">0</span>
+        </div>
+
+        <div class="summary-row">
+            <span>Pending</span>
+            <span id="pending-orders">0</span>
+        </div>
+
+    </section>
+
+    <!-- ================= BUTTONS ================= -->
+
+    <div class="cart-buttons" style="width:90%; margin:0 auto 50px;">
+
+        <button class="continue-btn" onclick="window.location.href='products.html'">
+
+            <i class="fas fa-arrow-left"></i>
+            Continue Shopping
+
+        </button>
+
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-box">
+
+            <h3>Organic Ayurveda</h3>
+
+            <p>
+                100% Organic & Natural Ayurvedic Products
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <p><a href="index.html">Home</a></p>
+
+            <p><a href="products.html">Products</a></p>
+
+            <p><a href="cart.html">Cart</a></p>
+
+            <p><a href="checkout.html">Checkout</a></p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>📍 Ahmedabad, Gujarat</p>
+
+            <p>📞 +91 9876543210</p>
+
+            <p>✉ info@organicayurveda.com</p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/orders.js"></script>
+
+</body>
+
+</html>

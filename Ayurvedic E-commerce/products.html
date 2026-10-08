@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Ayurveda | Products</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌿 Organic Ayurveda
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search"></i>
+
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart">
+                    <span id="cart-count">0</span>
+                </i>
+            </a>
+
+            <button onclick="location.href='login.html'">Login</button>
+        </div>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>Our Products</h1>
+
+        <p>100% Organic & Ayurvedic Products</p>
+
+    </section>
+
+    <!-- ================= FILTER SECTION ================= -->
+
+    <section class="filter-section">
+
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search Products">
+        </div>
+
+        <div class="filter-group">
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="Skin Care">Skin Care</option>
+                <option value="Hair Care">Hair Care</option>
+                <option value="Herbal">Herbal</option>
+            </select>
+
+            <select id="price">
+                <option value="all">All Prices</option>
+                <option value="0-200">₹0 - ₹200</option>
+                <option value="201-500">₹201 - ₹500</option>
+                <option value="501+">₹501+</option>
+            </select>
+        </div>
+
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products-page">
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Organic_Honey.jpg" alt="Honey">
+
+                <h3>Organic Honey</h3>
+
+                <p>Pure Forest Honey</p>
+
+                <h4>₹350</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Green_Tea.jpg" alt="Tea">
+
+                <h3>Green Tea</h3>
+
+                <p>Natural Detox Tea</p>
+
+                <h4>₹250</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Aloe_Vera_Gel.jpg">
+
+                <h3>Aloe Vera Gel</h3>
+
+                <p>Fresh Aloe Gel</p>
+
+                <h4>₹199</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="card" data-category="Skin Care">
+
+                <img src="images/Herbal_Face_Wash.jpg">
+
+                <h3>Herbal Face Wash</h3>
+
+                <p>Natural Face Cleanser</p>
+
+                <h4>₹220</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 5 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Ashwagandha_Powder.jpg">
+
+                <h3>Ashwagandha Powder</h3>
+
+                <p>Boost Energy Naturally</p>
+
+                <h4>₹399</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 6 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Turmeric_Powder.jpg">
+
+                <h3>Turmeric Powder</h3>
+
+                <p>Immunity Booster</p>
+
+                <h4>₹180</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 7 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Amla_Juice.jpg">
+
+                <h3>Amla Juice</h3>
+
+                <p>Vitamin C Rich</p>
+
+                <h4>₹240</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <!-- Product 8 -->
+
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Giloy_Juice.jpg">
+
+                <h3>Giloy Juice</h3>
+
+                <p>Natural Immunity</p>
+
+                <h4>₹290</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <!--Product 9-->
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Triphala_Churna.jpg">
+
+                <h3>Triphala Churna</h3>
+
+                <p>Immunity Booster</p>
+
+                <h4>₹200</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+            <!--Product 10-->
+            <div class="card" data-category="Herbal">
+
+                <img src="images/Herbal_Immunity_Kit.jpg">
+
+                <h3>Hearbal Immunity</h3>
+
+                <p>Immunity Booster</p>
+
+                <h4>₹340</h4>
+
+                <button class="cart-btn">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-box">
+
+            <h3>Organic Ayurveda</h3>
+
+            <p>Healthy Living Starts Here.</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <p><a href="index.html">Home</a></p>
+
+            <p><a href="products.html">Products</a></p>
+
+            <p><a href="#">About</a></p>
+
+            <p><a href="#">Contact</a></p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>📍 Ahmedabad</p>
+
+            <p>📞 +91 9876543210</p>
+
+            <p>✉ info@organic.com</p>
+
+        </div>
+
+    </footer>
+    <script src="js/products.js"></script>
+
+</body>
+
+</html>

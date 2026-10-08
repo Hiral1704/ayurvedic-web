@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Organic Ayurveda</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            🌿 Organic Ayurveda
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search"></i>
+
+            <i class="fas fa-shopping-cart">
+                <span id="cart-count">0</span>
+            </i>
+        </div>
+
+    </header>
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>🛒 Shopping Cart</h1>
+
+        <p>Review your selected Ayurvedic products</p>
+
+    </section>
+
+    <!-- ================= CART ================= -->
+
+    <section class="cart-section">
+        <table class="cart-table">
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="cart-summary">
+
+            <p>
+                Subtotal
+                <span id="subtotal">₹0</span>
+            </p>
+
+            <p>
+                Delivery
+                <span id="delivery-charge">₹0</span>
+            </p>
+
+            <h2>
+                Total
+                <span id="grand-total">₹0</span>
+            </h2>
+
+            <button class="continue-btn">
+                Continue Shopping
+            </button>
+
+            <button class="checkout-btn">
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </section>
+    <script src="js/cart.js"></script>
+
+</body>
+
+</html>
